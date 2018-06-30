@@ -1,13 +1,16 @@
 # Automating-selenium-kubernettes-helm
-Setup your own Selenium grid using IBM Cloud Private and Kubernetes Cluster
+This repo provides the direction launching a [Selenium](http://www.seleniumhq.org/) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
-## Kubernetes 101
+## Prerequisites
+
+- Kubernetes 1.5+ with Beta APIs enabled
+
+# Kubernetes 101
 Kubernetes is a platform for hosting Docker containers in a clustered environment with multiple Docker hosts. Kubernetes is a system for managing containerized applications across a cluster of nodes.
 
 << Add Image >>
 
-
-### Common Terms
+## Common Terms
 - Pod: A group of containers
 - Labels: Labels for identifying pods
 - Kubelet: Container Agent
@@ -15,23 +18,14 @@ Kubernetes is a platform for hosting Docker containers in a clustered environmen
 - Proxy: A load balancer for pods
 - Replication Controller: Manages replication of pods
 
-## Orchestrating docker-selenium via Kubernetes
-
 ### Launching selenium hub
 ```
 $ kubectl run selenium-hub --image selenium/hub:3.4.0 --port 4444
 ```
-#### Exposing selenium-hub to be able to access externally
+
+### Exposing selenium-hub to be able to access externally
 ```
 $ kubectl expose deployment selenium-hub --type=NodePort
-```
-
-#### To Access the selenium-hub url
-```
-$ minikube service selenium-hub --url
-
-It would show something like,
-http://192.168.99.100:xxxx
 ```
 
 ### Bringing up Selenium Nodes
@@ -80,3 +74,7 @@ Think of it like apt/yum/homebrew for Kubernetes.
 under the hood
 
 #### Helm package can be found here: [helm-selenium ](https://kubeapps.com/charts/stable/selenium)
+
+The command deploys Selenium on the Kubernetes cluster in the default configuration. The configuration section lists the parameters that can be configured during installation. 
+
+This chart bootstraps a Selenium deployment on a Kubernetes cluster using the Helm package manager.
