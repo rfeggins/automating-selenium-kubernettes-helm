@@ -1,14 +1,14 @@
 # Automating-selenium-kubernettes-helm
 This repo provides the direction launching a [Selenium](http://www.seleniumhq.org/) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
+Kubernetes is a platform for hosting Docker containers in a clustered environment with multiple Docker hosts. Kubernetes is a system for managing containerized applications across a cluster of nodes.
+
+<< image >>
+
 ## Prerequisites
 
 - Kubernetes 1.5+ with Beta APIs enabled
 
-# Kubernetes 101
-Kubernetes is a platform for hosting Docker containers in a clustered environment with multiple Docker hosts. Kubernetes is a system for managing containerized applications across a cluster of nodes.
-
-<< Add Image >>
 
 ## Common Terms
 - Pod: A group of containers
