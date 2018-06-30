@@ -6,15 +6,15 @@ Kubernetes is a platform for hosting Docker containers in a clustered environmen
 
 << Add Image >>
 
-Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes.Basics of Kubernetes
 
-> 
+### Common Terms
 > Pod: A group of containers
-Labels: Labels for identifying pods
-Kubelet: Container Agent
-etcd: A metadata service
-Proxy: A load balancer for pods
-Replication Controller: Manages replication of pods
+> Labels: Labels for identifying pods
+> Kubelet: Container Agent
+> etcd: A metadata service
+> Proxy: A load balancer for pods
+> Replication Controller: Manages replication of pods
 
-Orchestrating docker-selenium via Kubernetes
+## Orchestrating docker-selenium via Kubernetes
 
+Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes.Basics of Kubernetes
