@@ -3,11 +3,7 @@ This repo provides the direction launching a [Selenium](http://www.seleniumhq.or
 
 Kubernetes is a platform for hosting Docker containers in a clustered environment with multiple Docker hosts. Kubernetes is a system for managing containerized applications across a cluster of nodes.
 
-<< image >>
-
-## Prerequisites
-
-- Kubernetes 1.5+ with Beta APIs enabled
+![Selenium Architecture](images/Selenium-Grid-Architecture.png "Figure 1")
 
 
 ## Common Terms
